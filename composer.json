@@ -1,0 +1,40 @@
+{
+  "name": "richardhj/metamodels-fee-widget-avatar",
+  "type": "contao-module",
+  "description": "",
+  "keywords": [
+    "contao",
+    "metamodels"
+  ],
+  "license": "LGPL-3.0+",
+  "authors": [
+    {
+      "name": "Richard Henkenjohann",
+      "email": "richardhenkenjohann@googlemail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/richardhj/metamodels-fee-widget-avatar/issues",
+    "source": "https://github.com/richardhj/metamodels-fee-widget-avatar"
+  },
+  "require": {
+    "php": "^5.5 || ^7.0",
+    "contao/core": "^3.1",
+    "contao-community-alliance/composer-plugin": "^2.4",
+    "metamodels/attribute_file": "^2.0",
+    "metamodels/contao-frontend-editing": "^2.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Richardhj\\MetaModels\\Contao\\FrontendEditing\\": "src/"
+    }
+  },
+  "extra": {
+    "contao": {
+      "sources": {
+        "contao": "system/modules/metamodels-fee-widget-avatar"
+      }
+    }
+  }
+}

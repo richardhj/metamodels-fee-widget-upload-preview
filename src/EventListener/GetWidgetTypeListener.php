@@ -15,7 +15,7 @@ namespace Richardhj\MetaModels\Contao\FrontendEditing\EventListener;
 
 use ContaoCommunityAlliance\DcGeneral\Event\GetWidgetClassEvent;
 use MetaModels\DcGeneral\DataDefinition\IMetaModelDataDefinition;
-use Richardhj\MetaModels\Contao\FrontendEditing\Form\Avatar as Widget;
+use Richardhj\Contao\Widget\FormUploadPreview as Widget;
 
 
 /**
@@ -37,16 +37,18 @@ class GetWidgetTypeListener
             return;
         }
 
-        // DUMMY CODE
+        $property = $event->getProperty();
 
-        $property    = $event->getProperty();
+        // DUMMY CODE START
         $environment = $event->getEnvironment();
         /** @var IMetaModelDataDefinition $dataDefinition */
         $dataDefinition = $environment->getDataDefinition();
 
         $b = $dataDefinition->getMetaModelDefinition();
         $d = $b->getActiveInputScreen();
+        // DUMMY CODE STOP
 
+        // TODO add condition if(tl_metamodel_dcasetting.fee_widget === 'upload-preview')
         if ('fileTree' === $property->getWidgetType()) {
             $event->setWidgetClass(Widget::class);
         }

@@ -1,14 +1,14 @@
 <?php
 
 /**
- * This file is part of richardhj/metamodels-fee-widget-avatar.
+ * This file is part of richardhj/metamodels-fee-widget-upload-preview.
  *
  * Copyright (c) 2017 Richard Henkenjohann
  *
- * @package   richardhj/metamodels-fee-widget-avatar
+ * @package   richardhj/metamodels-fee-widget-upload-preview
  * @author    Richard Henkenjohann <richardhenkenjohann@googlemail.com>
  * @copyright 2017 Richard Henkenjohann
- * @license   https://github.com/richardhj/metamodels-fee-widget-avatar/blob/master/LICENSE LGPL-3.0
+ * @license   https://github.com/richardhj/metamodels-fee-widget-upload-preview/blob/master/LICENSE LGPL-3.0
  */
 
 use ContaoCommunityAlliance\DcGeneral\DcGeneralEvents;

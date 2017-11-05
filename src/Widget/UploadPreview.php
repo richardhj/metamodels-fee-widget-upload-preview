@@ -16,7 +16,7 @@ class UploadPreview extends FormUploadPreview implements IFileWidget
     {
         return [
             'doNotOverwrite',
-            'useUserHomeDir',
+            'useHomeDir',
             'extensions',
             'fallbackImage',
             'thumbnailSize',

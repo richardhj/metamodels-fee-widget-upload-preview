@@ -38,7 +38,7 @@ class GetWidgetTypeListener
 //        $property = $event->getProperty();
 //        $extra = $property->getExtra();
 //
-//        if ('fileTree' === $property->getWidgetType() && 'mm_upload_preview' === $extra['fee_widget']) {
+//        if ('fileTree' === $property->getWidgetType() && 'mm_upload_preview' === $extra['fe_widget']) {
 //            $event->setWidgetClass($GLOBALS['TL_FFL']['mm_upload_preview']);
 //        }
     }

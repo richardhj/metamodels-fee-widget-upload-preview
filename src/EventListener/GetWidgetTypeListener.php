@@ -14,8 +14,6 @@
 namespace Richardhj\MetaModels\Contao\FrontendEditing\EventListener;
 
 use ContaoCommunityAlliance\DcGeneral\Event\GetWidgetClassEvent;
-use MetaModels\DcGeneral\DataDefinition\IMetaModelDataDefinition;
-use Richardhj\Contao\Widget\FormUploadPreview as Widget;
 
 
 /**
@@ -33,24 +31,15 @@ class GetWidgetTypeListener
      */
     public function handleEvent(GetWidgetClassEvent $event)
     {
-        if ('FE' !== TL_MODE) {
-            return;
-        }
-
-        $property = $event->getProperty();
-
-        // DUMMY CODE START
-        $environment = $event->getEnvironment();
-        /** @var IMetaModelDataDefinition $dataDefinition */
-        $dataDefinition = $environment->getDataDefinition();
-
-        $b = $dataDefinition->getMetaModelDefinition();
-        $d = $b->getActiveInputScreen();
-        // DUMMY CODE STOP
-
-        // TODO add condition if(tl_metamodel_dcasetting.fee_widget === 'upload-preview')
-        if ('fileTree' === $property->getWidgetType()) {
-            $event->setWidgetClass(Widget::class);
-        }
+//        if ('FE' !== TL_MODE) {
+//            return;
+//        }
+//
+//        $property = $event->getProperty();
+//        $extra = $property->getExtra();
+//
+//        if ('fileTree' === $property->getWidgetType() && 'mm_upload_preview' === $extra['fee_widget']) {
+//            $event->setWidgetClass($GLOBALS['TL_FFL']['mm_upload_preview']);
+//        }
     }
 }

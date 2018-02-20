@@ -6,7 +6,7 @@
     "contao",
     "metamodels"
   ],
-  "license": "LGPL-3.0+",
+  "license": "LGPL-3.0-or-later",
   "authors": [
     {
       "name": "Richard Henkenjohann",
@@ -20,10 +20,9 @@
   },
   "require": {
     "php": "^5.5 || ^7.0",
-    "contao/core": "^3.1",
-    "contao-community-alliance/composer-plugin": "^2.4",
+    "contao/core-bundle": "^3.1 || ^4.2",
+    "contao-community-alliance/composer-plugin": "^2.4 || ^3.0",
     "metamodels/attribute_file": "^2.0",
-    "metamodels/contao-frontend-editing": "^2.0@dev",
     "richardhj/contao-widget-upload-preview": "^1.0"
   },
   "autoload": {

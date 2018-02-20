@@ -4,10 +4,10 @@
 namespace Richardhj\MetaModels\Contao\FrontendEditing\Widget;
 
 
-use MetaModels\Attribute\File\Contao\Widget\IFileWidget;
+use MetaModels\AttributeFileBundle\Contao\Widget\IFrontendFileWidget;
 use Richardhj\Contao\Widget\FormUploadPreview;
 
-class UploadPreview extends FormUploadPreview implements IFileWidget
+class UploadPreview extends FormUploadPreview implements IFrontendFileWidget
 {
     /**
      * @return array
